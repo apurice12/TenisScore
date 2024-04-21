@@ -12,7 +12,7 @@ body {
 }
 
 .table {
-  width: 100%;
+  width: 50%;
   border-collapse: collapse;
   border-spacing: 0;
   background-color: #fff;
@@ -22,7 +22,7 @@ body {
 }
 
 .table th, .table td {
-  padding: 16px;
+  padding: 2px;
   text-align: center;
   border-bottom: 1px solid #dee2e6;
 }
@@ -46,9 +46,9 @@ body {
 }
 
 .badge {
-  margin-right: 5px;
-  width: 20px;
-  height: 20px;
+  margin-right: 1px;
+  width: 17px;
+  height: 17px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -171,4 +171,43 @@ body {
 
 .player-name {
   color: black; /* Ensures text color consistency */
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 0 15px; /* Adjusted padding for smaller screens */
+  }
+
+  .table th, .table td {
+    padding: 12px; /* Adjusted padding for smaller screens */
+  }
+
+  .profile-picture {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+
+  .profile-picture-small {
+    width: 25px;
+    height: 25px;
+    margin-right: 3px;
+  }
+
+  .match-info .players {
+    font-size: 16px;
+  }
+
+  .match-info .score {
+    font-size: 18px;
+  }
+}
+/* Custom CSS styles */
+/* Add styles for specific table cells */
+/* Custom CSS styles */
+
+.custom-td-name {
+  font-weight: bold;
+  color: #333;
+  font-size: 14px; /* Adjust font size as needed */
+  
 }

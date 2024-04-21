@@ -32,6 +32,7 @@ const Purice = () => {
           <FontAwesomeIcon icon={faCaretUp} className="icon" />
           <span className="stat-text"> Ratio: {winRatio}%</span>
         </div>
+        
         <div className="last-matches">
           <h3>Last Matches:</h3>
           <ul>

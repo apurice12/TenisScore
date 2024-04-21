@@ -12,7 +12,7 @@ const MainPage=()=> {
             id: 1,
             name: "Open Tennis Championship",
             date: "April 21 - December 31, 2024",
-            location: "Studențesc Tei",
+            location: "Studențesc",
             participants: [fane, andi, lupu, purice]
         },
     

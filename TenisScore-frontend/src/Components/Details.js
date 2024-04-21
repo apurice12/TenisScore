@@ -24,7 +24,7 @@ const Details = () => {
   return (
     <div className="container">
       <h2 className="text-center mt-4 mb-5">Leaderboard</h2>
-      <table className="table table-striped table-bordered">
+      <table className="table d table-bordered">
         <thead className="thead-dark">
           <tr>
             <th>#</th>
@@ -38,26 +38,25 @@ const Details = () => {
           </tr>
         </thead>
         <tbody>
-          {sortedPlayers.map((player, index) => (
-            
-            <tr key={index}>
-              <td>{index + 1}</td>
-              <td className="d-flex align-items-center">
-  <img src={player.image} alt={player.name} className="profile-picture mr-2" />
-  <Link to={`/${player.name.toLowerCase()}`} className='player-name'>{player.name}</Link>
-</td>
+        {sortedPlayers.map((player, index) => (
+  <tr key={index}>
+    <td>{index + 1}</td>
+    <td className="custom-td-name d-flex align-items-center">
+      <img src={player.image} alt={player.name} className="profile-picture mr-2" />
+      <Link to={`/${player.name.toLowerCase()}`} className='player-name'>{player.name}</Link>
+    </td>
+    <td className="custom-td-wins">{player.wins}</td>
+    <td className="custom-td-last-matches">
+      {player.lastMatches.slice(Math.max(player.lastMatches.length - 3, 0)).reverse().map((match, index) => (
+        <span key={index} className={`badge badge-${match === 'V' ? 'success' : 'danger'}`}>
+          {match}
+        </span>
+      ))}
+    </td>
+    <td className="custom-td-titles">{player.titles}</td>
+  </tr>
+))}
 
-              <td>{player.wins}</td>
-              <td>
-              {player.lastMatches.slice(Math.max(player.lastMatches.length - 3, 0)).reverse().map((match, index) => (
-                  <span key={index} className={`badge badge-${match === 'V' ? 'success' : 'danger'}`}>
-                    {match}
-                  </span>
-                ))}
-              </td>
-              <td>{player.titles}</td>
-            </tr>
-          ))}
         </tbody>
       </table>
       <div className="text-center mt-4">
