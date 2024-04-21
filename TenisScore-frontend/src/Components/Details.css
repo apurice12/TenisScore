@@ -1,8 +1,7 @@
 /* Import Bootstrap CSS */
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
 
-/* Your custom CSS styles here */
-
+/* Custom CSS styles */
 body {
   font-family: 'Roboto', sans-serif; /* Apply Roboto font to the entire body */
 }
@@ -22,8 +21,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.table th,
-.table td {
+.table th, .table td {
   padding: 16px;
   text-align: center;
   border-bottom: 1px solid #dee2e6;
@@ -92,7 +90,6 @@ body {
   margin-right: 5px;
 }
 
-/* History matches section */
 .history-matches {
   background-color: #f8f9fa;
   border-radius: 8px;
@@ -139,17 +136,15 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: black;
-  margin-right:10%;
+  margin-right: 10%;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
   .container {
     padding: 0 15px;
   }
 
-  .table th,
-  .table td {
+  .table th, .table td {
     padding: 12px;
   }
 
@@ -160,11 +155,10 @@ body {
   }
 
   .profile-picture-small {
-    width: 60px;
-    height: 60px;
+    width: 25px;
+    height: 25px;
     margin-right: 3px;
-    padding: 8px;
-}
+  }
 
   .match-info .players {
     font-size: 16px;
@@ -174,6 +168,7 @@ body {
     font-size: 18px;
   }
 }
-.player-namex{
-  color: black;
+
+.player-name {
+  color: black; /* Ensures text color consistency */
 }
