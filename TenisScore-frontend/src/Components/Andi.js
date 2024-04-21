@@ -16,6 +16,10 @@ const Andi = () => {
     <div className="purice-container">
       <img src={andiImage} alt="Purice" className="purice-picture" />
       <div className="purice-info">
+      <div className="stat">
+         
+          <span className="stat-text-score">2-1</span>
+        </div>
         <div className="stat">
           <FontAwesomeIcon icon={faCaretUp} className="icon" />
           <span className="stat-text">Won Sets: {setsWon}</span>

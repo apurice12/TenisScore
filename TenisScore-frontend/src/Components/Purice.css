@@ -46,6 +46,8 @@
     font-size: 20px;
     font-weight: bold;
     margin-left: 10px; /* Space between icon and text */
+
+    
 }
 
 
@@ -74,4 +76,7 @@
   .last-matches li {
     margin-bottom: 5px;
   }
-  
+  .stat-text-score{
+    margin-left:40%;
+    font-size: 30px;
+  }
