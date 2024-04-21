@@ -1,0 +1,63 @@
+
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+.container {
+    max-width: 1200px; /* Adjusts the maximum width of the container for better control */
+    text-align: center;
+
+  @media (max-width: 767px) {
+    
+      margin-top: 45%;
+
+  }
+;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
+    margin: 10px; /* Adds margin around each card */
+}
+
+
+
+.card-img-top {
+    position: relative;
+    height: 200px; /* Specify a fixed height for the div */
+    width: 100%; /* Ensure the div takes the full width of its parent */
+    background-image: url('/tenisPicture.jpg'); /* Set the background image */
+    background-size: cover; /* Cover the entire area of the div without stretching the image */
+    background-position: center; /* Center the background image within the div */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    border-top-left-radius: .25rem; /* Match the border radius of Bootstrap cards */
+    border-top-right-radius: .25rem;
+}
+
+.card-body {
+    padding: 15px; /* Adjusts padding inside the card for better spacing */
+}
+
+
+.participant-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    top: 10px;
+}
+
+/* Overlap the avatars */
+
+
+/* Card body styling */
+.card-body {
+    padding: 15px;
+}
+
+/* Primary button styling */
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
